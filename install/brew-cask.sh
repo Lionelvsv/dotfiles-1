@@ -9,6 +9,7 @@ brew tap caskroom/versions
 apps=(
     gyazo
     visual-studio-code
+    karabiner-elements
     alfred
     vlc
     notion

@@ -167,6 +167,11 @@ mv -f ~/.atom ~/dotfiles_old/
 ln -s $HOME/dotfiles/atom ~/.atom
 echo "done"
 
+# karabiner settings
+echo -n "linking karabiner settings"
+ln -s $HOME/dotfiles/karabiner ~/.config/karabiner
+echo "done"
+
 
 declare -a FILES_TO_SYMLINK=(
 
@@ -340,7 +345,7 @@ ln -s ~/dotfiles/zsh/themes/nick.zsh-theme $HOME/.oh-my-zsh/themes
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Install the Solarized Dark theme for iTerm
-open "${HOME}/dotfiles/iterm/themes/Solarized Dark.itermcolors"
+open "${HOME}/dotfiles/iterm/themes/Dracula.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false

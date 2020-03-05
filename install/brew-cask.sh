@@ -7,37 +7,47 @@ brew tap caskroom/versions
 
 # Install packages
 apps=(
-    1password
     gyazo
-    dropbox
-    google-drive
+    visual-studio-code
+    alfred
+    vlc
+    notion
+    pgadmin4
+    sublime-text
+    android-file-transfer
+    microsoft-edge
+    android-studio
+    android-platform-tools
+    java
+    postman
+    font-hack-nerd-font
+    font-fira-code
+    fastlane
+    firefox-developer-edition
+    lastpass
+    hyper
+    discord
+    whatsapp
+    the-unarchiver
     spectacle
-    flux
     dash
     imagealpha
     imageoptim
-    evernote
     iterm2
     atom
-    webstorm
     firefox
-    firefoxnightly
+
     google-chrome
-    google-chrome-canary
-    malwarebytes-anti-malware
     glimmerblocker
     hammerspoon
     kaleidoscope
     macdown
     opera
-    screenflow
     spotify
-    skype
     slack
-    tower
     transmit
     elmedia-player
-    utorrent
+
 )
 
 brew cask install "${apps[@]}"

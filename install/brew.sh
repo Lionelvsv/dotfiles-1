@@ -22,6 +22,8 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade --all
 
+brew tap caskroom/cask
+
 # Install the Homebrew packages I use on a day-to-day basis.
 #
 # - Languages: rvm (Ruby), nvm (Node.js), go
@@ -44,8 +46,16 @@ brew upgrade --all
 # which version I'm using.
 
 apps=(
+
+
     rvm
     nvm
+    postgresql
+    redis
+    mailhog
+    python
+    pipenv
+    yarn
     mongodb
     bash-completion2
     coreutils
@@ -65,7 +75,6 @@ apps=(
     mtr
     autojump
     imagemagick --with-webp
-    python
     source-highlight
     the_silver_searcher
     tree
@@ -75,6 +84,7 @@ apps=(
 )
 
 brew install "${apps[@]}"
+brew cask install iterm2
 
 # Remove outdated versions from the cellar
 brew cleanup

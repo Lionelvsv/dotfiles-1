@@ -8,6 +8,6 @@ if [ -z "$CMD" ]; then
 else
   echo "Installing dotfiles"
   mkdir -p "$HOME/dotfiles" && \
-  eval "$CMD https://github.com/nicksp/dotfiles/tarball/master | tar -xzv -C ~/.dotfiles --strip-components=1 --exclude='{.gitignore}'"
-  . "$HOME/dotfiles/setup.sh"
+  eval "$CMD https://github.com/Lionelvsv/dotfiles-1/tarball/master | tar -xzv -C ~/.dotfiles --strip-components=1 --exclude='{.gitignore}'"
+  . "$HOME/dotfiles/setup-new-machine.sh"
 fi
